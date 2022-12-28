@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home page</title>
+
+        <!-- google font -->
+        <style> @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,900&display=swap'); </style>
+
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+        <!-- font awsome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+        <!-- custom css -->
+        <link rel="stylesheet" href="./asset/css/main.css">
+        
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg Navber">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./asset/image/logo.png" alt="">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                    
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.htm">Contact US</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav NavbarNav2">
+                        <li>
+                            <a href="./wishList.html">
+                                <i class="fa-solid fa-heart Cart"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./chartList.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="Count">5</span>
+                                <span class="Price">$200</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- main Product and review start-->
+        <section class="sectionMargin mt-3 mt-lg-5 mt-lg-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 PeoudctBigImgage">
+                        <img src="./assets/images/Cooking-Essential/Rice.jpg" alt="">
+                    </div>
+
+                    <div class="col-lg-7 col-md-7 RightSide">
+                        <h4>Alo Gobi</h4>
+                        <p  class="PriceP"> Tk 200
+                            <!-- <span class="discount">250TK</span> -->
+                        </p>
+                        <!-- <p class="SmalDisciption">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit in quos quo odit possimus, voluptates deserunt sunt iusto perferendis consequuntur tempora provident maiores asperiores voluptas laborum ipsum molestiae aliquid ea!</p> -->
+                    
+                        <div class="CataTagId">
+                            <p class="Category"><span>Category:</span> Alcohol</p>
+                            <p class="Category"><span>Tag:</span> premium Quality</p>
+                            <p class="Category"><span>PRoduct ID:</span> 2215</p>
+                        </div>
+
+                        <div class="VariantColor">
+                            <!-- <div class="ProductColor">
+                                <span>Color:</span>
+                                <div class="BtnsDiv">
+                                    <button class="ColorBtn1"></button>
+                                    <button class="ColorBtn2"></button>
+                                    <button class="ColorBtn3"></button>
+                                </div>
+                            </div> -->
+
+                            <div class="Variant">
+                                <span>Some Othes:</span>
+                                <div class="VariantImgs">
+                                    <div class="VarImg">
+                                        <img src="/asset/image/product.webp" alt="">
+                                    </div>
+                                    <div class="VarImg">
+                                        <img src="/asset/image/product.webp" alt="">
+                                    </div>
+                                    <div class="VarImg">
+                                        <img src="/asset/image/product.webp" alt="">
+                                    </div>
+                                    <div class="VarImg">
+                                        <img src="/asset/image/product.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ProductBtnIncement text-center">
+                            <div class="Incement">
+                                <span class="Plus">+</span>
+                                <span>1</span>
+                                <span class="Minnus">-</span>
+                            </div>
+                        </div>
+
+                        <div class="ProductBtn">
+                            <button class="CartBtn addBtn"><i class="fa fa-cart-shopping"></i> Add To Cart</button>
+                            <button class="addBtn"><i class="fa fa-bag-shopping"></i> Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review and disciption -->
+                <div class="ReviewAndDis">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                                Desciption
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                                Review
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane Disciption fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                            11Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, officiis nostrum? Eos aut ipsam nemo similique? Non laboriosam culpa deserunt dolor, error ut beatae pariatur sequi facilis! Eos, aliquid dolorem?
+                            11Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, officiis nostrum? Eos aut ipsam nemo similique? Non laboriosam culpa deserunt dolor, error ut beatae pariatur sequi facilis! Eos, aliquid dolorem?
+                        </div>
+
+                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 ReviewDiv text-center">
+                                    <h4 class="text-left">Give Reviews</h4>
+
+                                    <form action="" class="text-left">
+                                        <div>
+                                            <label for="name">Name</label>
+                                            <input type="name" placeholder="">
+                                        </div>
+                                        
+                                        <div>
+                                            <label for="email">Email</label>
+                                            <input type="email" placeholder="">
+                                        </div>
+                                        
+                                        <div>
+                                            <label for="massage">Massage</label>
+                                            <textarea name="Massage" placeholder="type massage"></textarea>
+                                        </div>
+                                    </form>
+
+                                    <div class="PatingDiv text-left">
+                                        <p>Rating</p>
+                                        <ul>
+                                            <li><i class="fa-regular fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star"></i></li>
+                                        </ul>
+                                    </div>
+
+                                    <button class="revied addBtn">Submit</button>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 ReviewDiv ReviewDiv2 text-center">
+                                    <h4 class="text-left">Reviews</h4>
+                                    
+                                    <div class="PersonReview">
+                                        <div class="PersonImg">
+                                            <img src="./asset/image/user.png" alt="">
+                                        </div>
+
+                                        <div>
+                                            <p class="perosName">Jaitun</p>
+                                            <div class="PatingDiv text-left">
+                                                <!-- <p>Rating</p> -->
+                                                <ul>
+                                                    <li><i class="fa-regular fa-star"></i></li>
+                                                    <li><i class="fa-regular fa-star"></i></li>
+                                                    <li><i class="fa-regular fa-star"></i></li>
+                                                    <li><i class="fa-regular fa-star"></i></li>
+                                                    <li><i class="fa-regular fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <p class="pesonReview">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="PersonReview">
+                                        <div class="PersonImg">
+                                            <img src="./asset/image/user.png" alt="">
+                                        </div>
+
+                                        <div>
+                                            <p class="perosName">Jaitun</p>
+                                            <div class="PatingDiv text-left">
+                                                <!-- <p>Rating</p> -->
+                                                <ul>
+                                                    <li><i class="fa-regular fa-star"></i></li>
+                                                    <li><i class="fa-regular fa-star"></i></li>
+                                                    <li><i class="fa-regular fa-star"></i></li>
+                                                    <li><i class="fa-regular fa-star"></i></li>
+                                                    <li><i class="fa-regular fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <p class="pesonReview">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="PersonReview">
+                                        <div class="PersonImg">
+                                            <img src="./asset/image/user.png" alt="">
+                                        </div>
+
+                                        <div>
+                                            <p class="perosName">Jaitun</p>
+                                            <div class="PatingDiv text-left">
+                                                <!-- <p>Rating</p> -->
+                                                <ul>
+                                                    <li><i class="fa-regular fa-star"></i></li>
+                                                    <li><i class="fa-regular fa-star"></i></li>
+                                                    <li><i class="fa-regular fa-star"></i></li>
+                                                    <li><i class="fa-regular fa-star"></i></li>
+                                                    <li><i class="fa-regular fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <p class="pesonReview">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- main Product and review end-->
+
+        <!-- related Product start -->
+        <section class="sectionMargin">
+            <div class="container-fluid RelatedProduct">
+                <h2 class="sectionTitle">
+                    Related Product
+                </h2>
+
+                
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 Product Width50">
+                        <a href="./productSingle.html">
+                            <div class="ProdctDiv text-center">
+                                <div class="ImageBox">
+                                    <img src="./asset/image/product.webp" alt="">
+                                </div>
+
+                                <div class="cardIcon">
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-heart"></i>
+                                        </li>
+                                        <li class="share">
+                                            <i class="fa-sharp fa-solid fa-share-nodes"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+    
+                                <div class="productext">
+                                    <p class="smalText">
+                                        Appetizers
+                                    </p>
+                                    <h3>
+                                        Chicken Tikka / Malai Kabab
+                                    </h3>
+                                    <p>
+                                        $99
+                                    </p>
+                                    <button class="addBtn">
+                                        add to chart
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-4 col-sm-6 Product Width50">
+                        <a href="./productSingle.html">
+                            <div class="ProdctDiv text-center">
+                                <div class="ImageBox">
+                                    <img src="./asset/image/product.webp" alt="">
+                                </div>
+
+                                <div class="cardIcon">
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-heart"></i>
+                                        </li>
+                                        <li class="share">
+                                            <i class="fa-sharp fa-solid fa-share-nodes"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+    
+                                <div class="productext">
+                                    <p class="smalText">
+                                        Appetizers
+                                    </p>
+                                    <h3>
+                                        Chicken Tikka / Malai Kabab
+                                    </h3>
+                                    <p>
+                                        $99
+                                    </p>
+                                    <button class="addBtn">
+                                        add to chart
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-4 col-sm-6 Product Width50">
+                        <a href="./productSingle.html">
+                            <div class="ProdctDiv text-center">
+                                <div class="ImageBox">
+                                    <img src="./asset/image/product.webp" alt="">
+                                </div>
+
+                                <div class="cardIcon">
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-heart"></i>
+                                        </li>
+                                        <li class="share">
+                                            <i class="fa-sharp fa-solid fa-share-nodes"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+    
+                                <div class="productext">
+                                    <p class="smalText">
+                                        Appetizers
+                                    </p>
+                                    <h3>
+                                        Chicken Tikka / Malai Kabab
+                                    </h3>
+                                    <p>
+                                        $99
+                                    </p>
+                                    <button class="addBtn">
+                                        add to chart
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-4 col-sm-6 Product Width50">
+                        <a href="./productSingle.html">
+                            <div class="ProdctDiv text-center">
+                                <div class="ImageBox">
+                                    <img src="./asset/image/product.webp" alt="">
+                                </div>
+
+                                <div class="cardIcon">
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-heart"></i>
+                                        </li>
+                                        <li class="share">
+                                            <i class="fa-sharp fa-solid fa-share-nodes"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+    
+                                <div class="productext">
+                                    <p class="smalText">
+                                        Appetizers
+                                    </p>
+                                    <h3>
+                                        Chicken Tikka / Malai Kabab
+                                    </h3>
+                                    <p>
+                                        $99
+                                    </p>
+                                    <button class="addBtn">
+                                        add to chart
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- related Product end -->
+
+        <footer class="sectionPadding">
+            <div class="row container-fluid">
+                <div class="col-lg-4 col-md-4">
+                    <div class="FooterTitle">
+                        <h3 class="">MENU</h3>
+                        <hr class="FooterHr">
+                    </div>
+
+                    <ul>
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="./about.html">About Us</a>
+                        </li>
+
+                        <li>
+                            <a href="./menu.html">Menu</a>
+                        </li>
+
+                        <li>
+                            <a href="./blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="./contact.htm">Contac Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <div class="FooterTitle">
+                        <h3 class="">About US</h3>
+                        <hr class="FooterHr">
+                    </div>
+
+                    <div class="text-center FooterImg">
+                        <img src="./asset/image/logo-black.png" alt="">
+                        <p>
+                            <b>Zaytuna Restaurant</b>
+                            offers delicious dining and takeout to Connecticut. We’re a cornerstone in the Connecticut community and have been known for our outstanding Indian cuisine, friendly staff, and excellent service.
+                        </p>
+                    </div>
+
+                    <div class="footerSocilaIcon">
+                        <ul>
+                            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <div>
+                        <div class="FooterTitle">
+                            <h3 class="">Opening Hour</h3>
+                            <hr class="FooterHr">
+                        </div>
+    
+                        <div class="text-center FooterImg">
+                            <p>open time and close time</p>
+                            <p>Time : <span>11:00am – 10:00pm</span></p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="FooterTitle">
+                            <h3 class="">Contact</h3>
+                            <hr class="FooterHr">
+                        </div>
+    
+                        <ul class="FooterContact">
+                            <li>
+                                <span>
+                                    <i class="fa-solid fa-phone"></i>
+                                </span>
+                                (203) 456-6204
+                            </li>
+                            
+                            <li>
+                                <span>
+                                    <i class="fa-solid fa-envelope"></i>
+                                </span>
+                                zaytuna786@gmail.com
+                            </li>
+                            
+                            <li>
+                                <span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span>
+                                395 Main St., Danbury, CT –06810
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lastFooter">
+                <div class="container-fluid row">
+                    <div class="col-lg-6 col-md-6">
+                        <span>
+                            Copyright © 2022 All Rights Reserved.|  Zaytuna Restaurant | Designed and Developed by : 
+                            <a href="https://www.digitalmarketingbd.com/">
+                                Digital Marketing Solution Pvt. Ltd.
+                            </a>
+                        </span>
+                    </div>
+    
+                    <div class="col-lg-6 col-md-6 imgeDIvlast">
+                        <img src="./asset/image/ssr.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    </body>
+</html>

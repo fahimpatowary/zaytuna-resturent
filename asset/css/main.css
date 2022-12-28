@@ -16,6 +16,18 @@ a{
     color: white !important;
 }
 
+.addBtn{
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    text-transform: capitalize;
+    background-color: var(--cartColor) !important;
+    font-size: 15px;
+    font-weight: 700 !important;
+    margin-bottom: 10px;
+    border-radius: 40px;
+}
+
 ul{
     padding: 0;
     list-style: none;
@@ -23,6 +35,7 @@ ul{
 
 img {
     width: 100%;
+    border-radius: 10px;
 }
 
 .container-fluid{ 
@@ -39,6 +52,15 @@ img {
 .sectionMargin{
     margin-bottom: 30px;
 }
+
+.smalText{
+    color: #3e4349 !important;
+    margin-bottom: 5px;
+    font-size: 14px !important;
+    opacity: .5;
+    margin-bottom: 10px;
+}
+
 /* nav ber start */
 .Navber{
     background-color: var(--navBg);
@@ -267,7 +289,7 @@ footer ul li a {
     margin-bottom: 20px;
 }
 
-.carosulChildDIv .button{
+.button{
     text-decoration: none;
     padding: 10px 30px;
     border-radius: 5px;
@@ -290,20 +312,17 @@ footer ul li a {
     margin-bottom: 50px;
 }
 
-.Product{
-    /* padding-left: ; */
-}
-
 .ProdctDiv{
-    border: 1px solid black;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: white;
     margin-bottom: 20px;
+    box-shadow: 0 0 6px #716d6d70;
 }
 
-.ProdctDiv .ImageBox{
-    border-radius: 5px;
+.ProdctDiv .ImageBox,
+.Blog .ImageBox{
+    border-radius: 10px;
     overflow: hidden;
     height: 225px;
     margin-bottom: 20px;
@@ -321,10 +340,723 @@ footer ul li a {
     font-weight: 600;
     color: var(--cartColor);
 }
+
+.ProdctDiv{
+    position: relative;
+}
+
+.cardIcon{
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    color: white;
+}
+
+.cardIcon li{
+    padding: 1px 5px;
+    border-radius: 50%;
+    font-size: 18px;
+    box-shadow: 0 0 5px rgb(119, 119, 119);
+    background-color: var(--cartColor);
+}
+
+.share{
+    display: none;
+}
+
+.cardIcon ul{
+    margin: 0;
+}
+
+.cardIcon li:not(:last-child){
+    margin-bottom: 7px;
+}
+
+.cardIcon li i{
+    margin-top: 1px;
+}
+
+.ProdctDiv:hover .cardIcon{
+    padding: 7px;
+    border-radius: 7px;
+    background-color: white;
+}
+
+.ProdctDiv:hover .share{
+    display: block;
+}
+
+.AllView .addBtn{
+    font-size: 18px !important;
+}
 /* product end */
 
+/* Best Food start */
+.BestFood{
+    display: flex;
+    align-items: center;
+}
+
+.BestFood img{
+    margin-bottom: 20px;
+}
+
+.BestFood .sectionTitle{
+    text-align: left !important;
+}
+
+.about_second_section_img img{
+    border-radius: 0;
+}
+
+.Experience p{
+    color: white !important;
+}
+
+.ExperienceMain{
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.ExperienceMain #right_bg h2 {
+    font-size: 51px;
+}
+/* Best Food end */
+
+/* Cartipicat start */
+.CartipicatImg{
+    max-width: 900px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+/* Cartipicat end */
+
+/* google review start */
+.GoogleReview .sectionTitle{
+    margin-bottom: 20px;
+}
+
+.GoogleReviewP{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.owl-carousel.owl-drag .owl-item {
+    background: rgba(255, 255, 255, 0);
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+ 
+.owl-carousel .item{
+    box-shadow: 0 0 2px #716d6d70;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-bottom: 20px;
+}
+
+.ReviewFrist{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(55, 54, 54);
+}
+
+.ReviewFristImg img{
+    padding-right: .5rem;
+}
+
+.ReviewFristText .Name{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.ReviewFristText ul{
+    margin: 0;
+    padding: 0;
+    color: var(--cartColor);
+}
+
+.ReviewFristText ul li{
+    display: inline;
+    font-size: 14px;
+}
+
+.ReviewSecon{
+    padding: 10px;
+}
+
+.ReviewSecon p{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.owl-carousel{
+    position: relative;
+}
+
+.owl-theme .owl-nav {
+    position: absolute;
+    top: 40%;
+    left: 2%;
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.owl-carousel .owl-nav button.owl-next, 
+.owl-carousel .owl-nav button.owl-prev{
+    background: var(--cartColor);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: white;
+}
+/* google review end */
+
+/* Blog section start */
+.Blog{
+    margin-bottom: 20px;
+}
+
+.BlogCard{
+    background-color: white;
+    box-shadow: 0 0 3px #716d6d70;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.blogText{
+    padding: 10px;
+}
+
+.Blog h4{
+    color: #F27B43;
+    font-size: 21px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.Blog p{
+    line-height: 1.5em;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.blogText a{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Blog .blogText{
+    margin-top: -57px;
+}
+
+.Blog .UserPic{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+/* Blog sectin end */
+
+/* Menu Page start */
+.MenuList{
+    padding: 20px;
+    color: white;
+    font-weight: 600;
+    position: sticky;
+    top: 50px;
+    border-radius: 12px;
+    background-color: var(--cartColor);
+}
+
+.MenuList li input{
+    margin-right: .5rem;
+}
+
+.MenuList li{
+    cursor: pointer !important;
+}
+/* Menu Page end */
+
+/* product page start */
+.mainProdictDiv{
+    /* height: min-content; */
+}
+.ProductBg{
+    height: 550px;
+    width: 100%;
+    /* background-color: red; */
+    background-image: url(../images/procuctbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+}
+.BgBlack{
+    position: absolute;
+    height: 550px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 30px;
+    background-color: rgba(0, 0, 0, 0.479);
+    overflow: visible;
+}
+.ProductBg h1{
+    /* margin-top: 20px; */
+    max-width: 425px;
+    margin: auto;
+    text-align: center;
+    color: var(--logoColor-2);
+    color: white;
+    padding: 10px;
+    font-size: 34px;
+    padding-top: 40px;
+}
+
+/* .mainProdictDiv{
+    height: auto;
+    position: relative ;
+    overflow: visible;
+} */
+
+/* .ProductDaitlesdiv{
+    max-width: 1200px;
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    top: 400px;
+    left: 10%;
+    background-color: var(--section-bg);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: rgb(207 207 207) 0px 0px 5px;
+} */
+
+.ProductDaitlesdiv{
+    max-width: 1200px;
+    width: 85%;
+    margin: auto;
+    background-color: var(--section-bg);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: rgb(207 207 207) 0px 0px 5px;
+    margin-top: -319px;
+}
+
+.ProductDaitlesdiv img{
+    border-radius: 9px;
+}
+
+.PriceP{
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--logoColor-1);
+    margin-bottom: 1rem !important;
+}
+
+.PriceP span{
+    margin-left: .3rem;
+    color: rgb(79, 79, 79);
+}
+
+.SmalDisciption{
+    font-size: 20px;
+    color: rgb(52, 52, 52);
+    margin-bottom: 1rem !important;
+    overflow: hidden;
+}
+
+.ProductBtn button{
+    font-weight: 400 !important;
+    background-color: var(--logoColor-1);
+    width: 200px;
+}
+
+.ProductBtn button:hover{
+    background-color: var(--logoColor-2);
+}
+
+.ProductBtn button i{
+    margin-right: .5rem;
+}
+
+.ProductBtn button:not(:last-child){
+    margin-right: 1rem;
+}
+
+.CataTagId {
+    margin-bottom: 1.2rem;
+}
+
+.CataTagId p {
+    margin-bottom: .5rem;
+}
+
+.CataTagId p span{
+    font-weight: 600;
+}
+
+.RightSide h4{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.RightSide .ProductBtnIncement{
+    justify-content: left !important;
+    width: 200px;
+    margin-bottom: 1.2rem;
+}
+
+.RightSide .Incement{
+    width: 200px;
+}
+
+.VariantColor{
+    margin-bottom: 1rem;
+}
+
+.VariantColor span{
+    font-weight: 500;
+}
+
+.ProductColor button{
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 0;
+    margin-top: .5rem;
+    margin-right: .5rem;
+    outline: 4px solid transparent;
+}
+
+.ProductColor button:hover{
+    outline: 4px solid black;
+}
+
+.ColorBtn1:hover{
+    background-color: var(--logoColor-1);
+}
+
+.ColorBtn2{
+    background-color: rgb(238, 7, 7);
+}
+
+.ColorBtn3{
+    background-color: blue;
+}
+
+.ColorBtn2:hover{
+    background-color: rgb(238, 7, 7);
+}
+
+.ColorBtn3:hover{
+    background-color: blue;
+}
+
+.Variant{
+    margin-top: .5rem;
+}
+
+.VariantImgs{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Variant .VariantImgs{
+    margin-top: .5rem;
+}
+
+.Variant .VarImg{
+    width: 89px;
+    height: 73px;
+    border-radius: 5px;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+}
+
+.Variant .VarImg img{
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+}
+
+.Incement{
+    height: 45px;
+    background-color: var(--iconBg);
+    width: 90%;
+    margin: auto;
+    border-radius: 35px;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 5px #c6c6c6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.Incement .Plus,
+.Incement .Minnus{
+    font-size: 25px;
+    height: 35px;
+    width: 35px;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--cartColor);
+}
+
+.Incement .Plus,
+.Incement .Minnus{
+    font-size: 19px;
+    height: 28px;
+    width: 28px;
+    padding: 0;
+}
+
+.Incement .Plus:hover,
+.Incement .Minnus:hover{
+    background-color: white;
+    color: black;
+}
+
+    /* tabe review and disciption start */
+    .ReviewAndDis{
+        margin-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .nav-tabs li,
+    .nav-tabs li button{
+        width: 150px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .nav-tabs .nav-item{
+        background: none;
+        border: none;
+        margin-right: .5rem;
+        padding: 0;
+        bottom: none;
+    }
+
+    .nav-tabs li button{
+        padding: 6px 30px;
+        font-size: 20px;
+        font-weight: 600px;
+        background: none !important;
+        border-radius: 15px 15px 0 0  !important;
+    }
+
+    .nav-tabs li button:hover{
+        background: var(--cartColor) !important;
+    }
+
+    .nav-tabs li:hover{
+        background: none;
+    }
+    
+    .nav-tabs li .active{
+        color: white !important;
+        border: none;
+        background: var(--cartColor) !important;
+    }
+    
+    .nav-tabs li .active button{
+        background: var(--logoColor-2) !important;
+    }
+    
+    .tab-content .tab-pane{
+        padding: 20px ;
+        border-radius: 10px;
+        /* height: 450px; */
+        border-top: 1px solid rgb(219, 213, 213);
+    }
+
+    .tab-content .active{
+        color: rgb(4, 4, 4) !important;
+        background-color: white;
+    }
+
+    .Disciption{
+        font-size: 19px;
+    }
+
+    .ReviewDiv2{
+        height: 350px;
+        overflow-x: auto;
+    }
+
+    .ReviewDiv label,
+    .ReviewDiv input{
+        display: block !important;
+        width: 100%;
+        text-align: left !important;
+    }
+
+    .ReviewDiv label{
+        margin-bottom: .5rem;
+        font-weight: 600;
+    }
+
+    .ReviewDiv input{
+        margin-bottom: .5rem;
+    }
+
+    .ReviewDiv textarea{
+        width: 100%;
+        border-radius: 5px;
+        padding: 10px;
+        outline: none;
+        margin-bottom: .5rem;
+        border: 1px solid var(--logoColor-1);
+    }
+
+    .ReviewDiv h4{
+        text-align: left;
+    }
+
+    .ReviewDiv .revied{
+        background-color: var(--cartColor) !important;
+    }
+
+    .ReviewDiv form input{
+        border-radius: 12px;
+        outline: 0;
+        height: 30px;
+        padding: 10px;
+        border: 1px solid rgb(97, 97, 97);
+    }
+
+    .ReviewDiv form textarea{
+        border-radius: 12px;
+        outline: 0;
+        padding: 10px;
+        border: 1px solid rgb(97, 97, 97);
+    }
+
+    .PatingDiv p{
+        font-weight: 600;
+        margin-bottom: .2rem;
+        text-align: left;
+    }
+
+    .PatingDiv ul {
+        text-align: left;
+    }
+
+    .PatingDiv ul li {
+        display: inline-block;
+    }
+
+    .PatingDiv ul i{
+        color: var(--cartColor);
+        margin-right: .3rem;
+        margin-bottom: .5rem;
+    }
+
+    .ReviewDiv button{
+        background-color: var(--logoColor-1) !important;
+        margin: auto;
+        font-weight: 500;
+        margin-top: .5rem;
+    }
+
+    .ReviewDiv button:hover{
+        background-color: var(--logoColor-2) !important;
+    }
+
+    .PersonReview{
+        display: flex;
+    }
+
+    .PersonImg{
+        height: 60px;
+        width: 60px;
+        border-radius: 100%;
+        overflow: hidden;
+        padding: 0;
+        margin-right: .7rem;
+    }
+
+    .PersonImg img{
+        height: 100% !important;
+        width: 100% !important;
+    }
+
+    .PersonReview .perosName{
+        font-size: 16px;
+        font-weight: 600;
+        text-align: left;
+        margin-bottom: .3rem;
+    }
+
+    .PersonReview .pesonReview{
+        text-align: left !important;
+    }
+
+    .PersonReview .PatingDiv i{
+        margin-right: 0;
+        font-size: 14px;
+    }
+    /* tabe review and disciption end */
+
+    /* banner start */
+    .BannerEihttext{
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    .BannerEihttext .HerosTextunder{
+        text-align: center;
+    }
+
+    .BannerEihttext .HerosText{
+        justify-content: right;
+        padding-right: 5%;
+    }
+    /* banner end */
+
+    .RelatedProduct .sectionTitle{
+        text-align: left;
+        font-size: 28px;
+    }
+/* product page end */
+
 /* responsive start */
+@media screen and (min-width: 1400px) {
+    .ProductDaitlesdiv{
+        left: calc((100% - 1200px)/2);
+    }
+}
+
 @media screen and (max-width: 991px) {
+    .container-fluid {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .NavbarNav2{
         flex-direction: row;
     }
@@ -348,6 +1080,35 @@ footer ul li a {
         text-align: center;
         margin-bottom: 25px;
     }
+
+    .carousel-item {
+        margin-bottom: 10px;
+    }
+
+    .Banner img {
+        margin-bottom: 10px;
+    }
+    
+    .ProdctDiv .ImageBox{
+        height: 154px;
+        margin-bottom: 10px;
+    }
+
+    .ProdctDiv .ImageBox img{
+        height: 154px;
+    }
+
+    .productext p {
+        margin-bottom: 10px;
+    }
+
+    .ExperienceMain{
+        padding-bottom: 10px;
+    }
+
+    .owl-carousel .item{
+        margin-bottom: 10px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 979px){
@@ -365,7 +1126,7 @@ footer ul li a {
     }
     
     .sectionMargin{
-        margin-bottom: 25px;
+        margin-bottom: 15px;
     }
 
     .lastFooter img{
@@ -374,6 +1135,19 @@ footer ul li a {
 }
 
 @media screen and (max-width: 767px) {
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .Width50{
+        width: 50%;
+    }
+
+    .Product{
+        padding: 0 5px;
+    }
+
     .FooterTitle {
         margin-bottom: 25px;
     }
@@ -399,13 +1173,44 @@ footer ul li a {
         margin-bottom: 0px;
     }
 
-    .Banner img{
-        margin-bottom: 0px;
+    .sectionTitle {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .BestFood img,
+    .Blog .UserPic,
+    .Banner img,
+    .Blog h4,
+    .Blog p{
+        margin-bottom: 10px;
+    }
+      
+    .GoogleReview .sectionTitle {
+        margin-bottom: 15px;
+    }
+
+    .GoogleReviewP {
+        margin-bottom: 15px;
+    }
+
+    .MenuList li{
+        display: inline-block !important;
+        margin-right: 0.7rem;
+    }
+    
+    .ReviewAndDis{
+        margin-top: 10px;
+        padding-bottom: 10px;
     }
 }
 
 
 @media only screen and (min-width: 280px) and (max-width: 428px) {
+    .ProdctDiv {
+        margin-bottom: 10px;
+    }
+
     .FooterTitle {
         margin-bottom: 10px;
     }
@@ -448,6 +1253,41 @@ footer ul li a {
         margin-bottom: 10px;
     }
 
+    .sectionMargin {
+        margin-bottom: 10px;
+    }  
+    
+    .GoogleReview .sectionTitle {
+        margin-bottom: 10px;
+    }
+
+    .GoogleReviewP {
+        margin-bottom: 10px;
+    } 
+
+    .owl-carousel .item{
+        margin-bottom: 10px;
+    } 
+
+    .MenuList li input {
+        margin-right: 0.2rem;
+    }
+
+    .MenuList {
+        font-size: 13px;
+    }
+
+    .addBtn{
+        font-size: 13px;
+    }
+
+    .productext h3 {
+        font-size: 15px;
+    }
+
+    .productext p {
+        font-size: 20px;
+    }
 }
 
 :root{
