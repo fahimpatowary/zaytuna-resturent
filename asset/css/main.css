@@ -98,7 +98,6 @@ img {
 
 .Navber li a{
     color: #EAEAEA;
-    fill: #EAEAEA;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 5px;
@@ -123,7 +122,7 @@ img {
     width: 1em;
     height: 1em;
     font-weight: 900;
-    color: var(--cartColor);
+    color: white;
 }
 
 .NavbarNav2 li a {
@@ -618,7 +617,6 @@ footer ul li a {
 .ProductBg{
     height: 550px;
     width: 100%;
-    /* background-color: red; */
     background-image: url(../images/procuctbg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -967,9 +965,9 @@ footer ul li a {
     }
 
     .ReviewDiv form input{
-        border-radius: 12px;
+        border-radius: 20px;
         outline: 0;
-        height: 30px;
+        height: 40px;
         padding: 10px;
         border: 1px solid rgb(97, 97, 97);
     }
@@ -1006,10 +1004,6 @@ footer ul li a {
         margin: auto;
         font-weight: 500;
         margin-top: .5rem;
-    }
-
-    .ReviewDiv button:hover{
-        background-color: var(--logoColor-2) !important;
     }
 
     .PersonReview{
@@ -1090,6 +1084,33 @@ footer ul li a {
     width: 23%;
     max-width: 66px;
     margin-bottom: 10px;
+}
+
+.SearchBer input{
+    padding-left: 15px;
+    padding-right: 20px;
+    border: none;
+    box-shadow: 0 0 5px #962f2f93;
+    border-radius: 24px;
+    height: 32px;
+    outline: none;
+    width: 339px;
+}
+.SearchBer form{
+    position: relative;
+    width: min-content;
+    margin: auto;
+}
+
+.SearchBer label{
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    position: absolute;
+    padding: 4.5px 10px;
+    color: white;
+    border-radius: 0 20px 20px 0 ;
+    background-color: var(--iconBg);
 }
 /* product page end */
 
@@ -1179,7 +1200,7 @@ footer ul li a {
     line-height: 33px;
     border: 1px solid #ddd;
     color: #606060;
-    border-radius: 5px;
+    border-radius: 50%;
 }
 
 .quantity .quantity-nav .quantity-button:hover {
@@ -1308,6 +1329,7 @@ footer ul li a {
 }
 
 .LginForm input{
+    border-radius: 30px !important;
     box-shadow:  0 0 5px rgb(185, 185, 185);
 }
 
@@ -1345,7 +1367,7 @@ footer ul li a {
     padding: 6px 36px;
     background-color: var(--cartColor);
     color: white;
-    border-radius: 7px;
+    border-radius: 30px;
     margin: auto;
     box-shadow: 0 0 5px rgb(185 127 93);
     font-size: 20px;
@@ -1421,6 +1443,11 @@ footer ul li a {
 
 button.FaBtn.RegistBtn.LoginBtn{
     margin-top: 1rem;
+}
+
+.LoginBtn a{
+    background-color: white !important;
+    color: black !important;
 }
 
 .ForgotPassowrdDiv{
@@ -1696,12 +1723,17 @@ button.FaBtn.RegistBtn.LoginBtn{
     .btn-box2{
         margin-bottom: 10px;
     }
+
+    .SearchBer input,
+    .SearchBer form{
+        width: 100%;
+    }
 }
 
 :root{
     --navBg: #000000;
     --sectionBg: #F2F4EC;
-    --cartColor: #F27B43;
+    --cartColor: #393939;
     --footerBg: #f5f3f1;
     --iconBg: #8A2828;
 }

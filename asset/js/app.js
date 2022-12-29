@@ -5,6 +5,13 @@ function juice_img(image){
     let main_img = document.querySelector('.main').src = image;
 }
 
+// // active class
+// $("#homeL").on("click",function(e){
+//     e.preventDefult()
+//     $(".navbar-nav li").removeClass("active");
+//     $(this).addClass("active");
+// });
+
 // login page hide show
 let registBtn = document.getElementById("RegistBtnLogin");
 function loginSing(){

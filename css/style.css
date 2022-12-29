@@ -482,9 +482,10 @@ footer ul li a {
     margin-right: 30px;
 }
 .contact_btn{
-    background-color: #f27b43;
+    background-color: black;
     color: #ffffff;
     width: 100%;
+    border-radius: 24px;
 }
 .contact_btn:hover{
     color: #a00505;
@@ -689,14 +690,15 @@ footer ul li a {
     font-weight: 600;
 }
 #blog_page .card h3 a{
-    color: #8A2828 !important;
+    color: black !important;
 }
 #blog_page .card p a{
     color: #8A2828 !important;
 }
 .blog_btn{
-    background-color: #8A2828;
+    background-color: black;
     width: 250px;
+    border-radius: 24px;
 }
 /* #sidebar{
     margin-right: 50px;
@@ -706,9 +708,25 @@ footer ul li a {
     padding: 30px;
     border-radius: 20px;
 }
+.form-control{
+    padding: 5px !important;
+}
+
+.form-control-lg{
+    border-radius: 24px;
+}
+.form-control-lg{
+    font-size: 14px !important;
+}
+
+.form-control{
+    padding: 15px;
+    border-radius: 24px;
+}
 .blog_search_btn{
-    background-color: #8A2828;
+    background-color: #010101;
     color: #EAEAEA;
+    border-radius: 24px;
 }
 .blog_search_btn:hover{
     color: #F27B43;
@@ -777,7 +795,12 @@ footer ul li a {
     border-radius: 30px;
 }
 .single_blog_btn{
-    background-color: #a00505;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 24px;
+}
+.single_blog_btn:hover{
+    background-color: black;
     color: #ffffff;
 }
 
@@ -917,3 +940,65 @@ footer ul li a {
     }
 }
 /* Delivery Section */
+
+/* checkout Page */
+
+#checkout_page{
+    padding: 50px 0;
+}
+#checkout_page .price_section{
+    border: 1px dashed #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+}
+#checkout_page #tips ul li{
+    display: inline-block;
+    border: 1px dashed #1f1f1f;
+    padding: 10px;
+    border-radius: 5px;
+}
+#checkout_page #tips ul li a{
+    color: #2b2b2b !important;
+}
+#price_total_divider{
+    border: 1px dashed #1a1a1a;
+}
+.price_section p{
+    padding: 3px 0;
+}
+.form-select{
+    border-radius: 24px;
+}
+#payment_card_section{
+    border: 1px solid #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+}
+.paypal_btn{
+    width: 100%;
+    border-radius: 24px;
+}
+#checkout_page .fa-cc-paypal {
+    font-size: 35px;
+}
+#checkout_page .fa-money-bill-1-wave{
+    font-size: 35px;
+}
+.place_order_btn{
+    width: 100%;
+    border-radius: 24px;
+}
+@media only screen and (min-width: 280px) and (max-width: 428px){
+    #checkout_page{
+        padding: 50px 10px;
+    }
+    #checkout_page #tips{
+        margin-top: 30px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px){
+    #checkout_page #tips{
+        margin-top: 30px;
+    } 
+}
+/* checkout Page */
