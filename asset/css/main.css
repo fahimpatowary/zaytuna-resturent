@@ -593,9 +593,6 @@ footer ul li a {
 /* Menu Page end */
 
 /* product page start */
-.mainProdictDiv{
-    /* height: min-content; */
-}
 .ProductBg{
     height: 550px;
     width: 100%;
@@ -618,8 +615,8 @@ footer ul li a {
     background-color: rgba(0, 0, 0, 0.479);
     overflow: visible;
 }
+
 .ProductBg h1{
-    /* margin-top: 20px; */
     max-width: 425px;
     margin: auto;
     text-align: center;
@@ -630,24 +627,31 @@ footer ul li a {
     padding-top: 40px;
 }
 
-/* .mainProdictDiv{
-    height: auto;
-    position: relative ;
-    overflow: visible;
-} */
-
-/* .ProductDaitlesdiv{
-    max-width: 1200px;
-    width: 80%;
-    margin: auto;
-    position: absolute;
-    top: 400px;
-    left: 10%;
-    background-color: var(--section-bg);
-    padding: 20px;
+.PeoudctBigImgage .ProductImg{
+    height: 324px;
+    margin-bottom: 20px;
+    overflow: hidden;
     border-radius: 12px;
-    box-shadow: rgb(207 207 207) 0px 0px 5px;
-} */
+}
+
+.PeoudctBigImgage .ProductImg img{
+    height: 100%;
+}
+
+.AnotherImg{
+    display: flex;
+    width: 100%;
+}
+
+.AnotherImg img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.AnotherImg img:not(:last-child){
+    margin-right: .5rem;
+}
 
 .ProductDaitlesdiv{
     max-width: 1200px;
@@ -1042,7 +1046,370 @@ footer ul li a {
         text-align: left;
         font-size: 28px;
     }
+
+.ChargeDiv{
+    background-color: white;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.ChargeDiv .title{
+    margin-bottom: 15px;
+    color: var(--cartColor);
+    padding-bottom: 15px;
+    border-bottom: 2px solid;
+}
+
+.ChargeDiv .panel-body p{
+    margin-bottom: 10px;
+}
+
+.panel-body img {
+    width: 23%;
+    max-width: 66px;
+    margin-bottom: 10px;
+}
 /* product page end */
+
+/* cart page start */
+.single-tab{
+    background-color: transparent;
+    text-align: center;
+}
+
+.table-responsive{
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.single-tab img{
+    height: 70px;
+    width: 70px;
+}
+
+.single-tab a{
+    color:black !important;
+}
+
+.revel-table .table-responsive thead {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.quantity {
+    width: 154px;
+    height: 40px;
+    border: 1px solid #ddd;
+    position: relative;
+    border-radius: 5px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.quantity input {
+    width: 100%;
+    height: 100%;
+    padding: 0 65px;
+    font-size: 14px;
+    border: none;
+    text-align: center;
+}
+
+.quantity .quantity-nav {
+    border-left: 1px solid #ddd;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.quantity-button {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border-right: 1px solid #ddd;
+    background: var(--cartColor);
+}
+
+.quantity-button:last-child {
+    border-right: 0;
+    border-left: 1px solid #ddd;
+}
+
+.revel-table .table-responsive .cart-delete {
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    border: 1px solid #ddd;
+    color: #606060;
+    border-radius: 5px;
+}
+
+.quantity .quantity-nav .quantity-button:hover {
+    background: var(--footerBg);
+    border-color: var(--cartColor);
+    color: #060606;
+}
+
+.table-responsive .cart-delete:hover {
+    color: red;
+    border-color: red;
+}
+
+.cart-total-panel{
+    padding-left: 10px;
+    overflow: hidden;
+    background: white;
+    border-radius: 12px;
+    padding: 11px;
+}
+
+.cart-total-panel .title{
+    margin-bottom: 15px;
+    color: var(--cartColor);
+    padding-bottom: 15px;
+    border-bottom: 2px solid;
+}
+
+.panel-body h5{
+    color: #7a7878;
+    margin-bottom: 7PX;
+}
+
+.TotalDiv{
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 2px solid var(--iconBg); 
+}
+
+.panel-body span{
+    font-size: 19px;
+    font-weight: 600;
+    color: #f27b43;
+}
+
+.btn-box {
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+
+.btn-box .def-btn:first-child {
+    background: var(--cartColor);
+}   
+
+.def-btn {
+    display: block;
+    height: 39px;
+    border-radius: 8px;
+    line-height: 34px;
+    padding: 2px 12px;
+    background: var(--cartColor);
+    color: #ffffff !important;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border: none;
+}
+
+.btn-box2 a{
+    color: #ffffff !important;
+}
+
+.CartPage{
+    margin-bottom: 20px;
+}
+/* cart page end */
+
+/* login start */
+.LoginSection{
+    background: white;
+    padding: 4rem 0;
+    margin-bottom: 0;
+}
+
+.LoginFoote{
+    margin-top: 0 !important;
+}
+
+.Login{
+    max-width: 450px;
+    margin: auto;
+    background-color: white;
+    color: black;
+    padding: 0 5px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #bdbdbd;
+    overflow: hidden;
+}
+
+.Login h4{
+    margin-bottom: 0;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    padding: 13px 24px;
+    font-size: 28px;
+}
+
+.LginForm label,
+.LginForm input{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.LginForm{
+    padding: 2rem 25px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.LginForm input{
+    box-shadow:  0 0 5px rgb(185, 185, 185);
+}
+
+.LginForm label,
+.LginForm input{
+    margin-bottom: .7rem;
+    text-align: left;
+}
+
+.LginForm input{
+    margin-bottom: 1rem;
+    border-radius: 7px;
+    padding-left: 20px;
+    margin-bottom: 1rem;
+    border-radius: 7px;
+    padding-left: 20px;
+    height: 40px;
+    outline: none;
+    border: none;
+}
+
+.LginForm input:focus{
+    box-shadow: 0 0 7px rgb(214, 79, 0);
+}
+
+.FaBtn{
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.LginForm button{ 
+    border: none;
+    outline: none;
+    padding: 6px 36px;
+    background-color: var(--cartColor);
+    color: white;
+    border-radius: 7px;
+    margin: auto;
+    box-shadow: 0 0 5px rgb(185 127 93);
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.LoginOr{
+    padding: 13px 25px;
+}
+
+.LoginOr button{
+    color: var(--logoColor-1);
+    height: 36px;
+    width: 36px;
+    font-size: 25px;
+    text-align: center;
+    padding: 0;
+    box-shadow: 0 0 5px rgb(184, 184, 184);
+    border-radius: 50%;
+    margin-top: .5rem;
+    margin-right: .5rem;
+}
+
+.FprgtpassowardDiva{
+    display: block;
+    font-style: italic;
+    color: #535353;
+}
+
+.FprgtpassowardDiva:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.FprgtpassowardDivin{
+    height: 10px;
+    width: 10px !important;
+    margin-top: -10px;
+}
+
+.registerDiv{
+    padding-bottom: 20px;
+}
+
+.RegistBtn{
+    color: #323232;
+    border-radius: 7px;
+    margin: auto;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.RegistBtn:hover{
+    color: blue;
+}
+
+.SingInForm{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.SingInForm div{
+    padding: 0 10px;
+    width: 100%;
+}
+
+#SingDiv{
+    display: none;
+}
+
+button.FaBtn.RegistBtn.LoginBtn{
+    margin-top: 1rem;
+}
+
+.ForgotPassowrdDiv{
+    display: none;
+}
+
+.OrderTracking{
+    border-bottom: none;
+}
+/* login end */
+
 
 /* responsive start */
 @media screen and (min-width: 1400px) {
@@ -1108,6 +1475,10 @@ footer ul li a {
 
     .owl-carousel .item{
         margin-bottom: 10px;
+    }
+
+    .table-responsive{
+        overflow-x: scroll;
     }
 }
 
@@ -1203,10 +1574,14 @@ footer ul li a {
         margin-top: 10px;
         padding-bottom: 10px;
     }
+
+    .table-responsive{
+        margin-bottom: 10px;
+    }
 }
 
 
-@media only screen and (min-width: 280px) and (max-width: 428px) {
+@media only screen and (min-width: 280px) and (max-width: 450px) {
     .ProdctDiv {
         margin-bottom: 10px;
     }
@@ -1287,6 +1662,14 @@ footer ul li a {
 
     .productext p {
         font-size: 20px;
+    }
+    
+    .CartPage{
+        margin-bottom: 0px;
+    }
+
+    .btn-box2{
+        margin-bottom: 10px;
     }
 }
 

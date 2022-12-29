@@ -73,14 +73,21 @@
         </nav>
         
         <!-- main Product and review start-->
-        <section class="sectionMargin mt-3 mt-lg-5 mt-lg-3">
+        <section class="sectionMargin mt-3 mt-lg-5 mt-md-4">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-5 col-md-5 PeoudctBigImgage">
-                        <img src="./assets/images/Cooking-Essential/Rice.jpg" alt="">
+                    <div class="col-lg-4 col-md-6 PeoudctBigImgage">
+                        <div class="ProductImg">
+                            <img class="main" src="./asset/image/product1.webp" alt="">
+                        </div>
+                        <div class="AnotherImg">
+                            <img onclick="juice_img('./asset/image/product1.webp')" src="./asset/image/product1.webp" alt="">
+                            <img onclick="juice_img('./asset/image/product2.jpg')" src="./asset/image/product2.jpg" alt="">
+                            <img onclick="juice_img('./asset/image/product.webp')" src="./asset/image/product.webp" alt="">
+                        </div>
                     </div>
 
-                    <div class="col-lg-7 col-md-7 RightSide">
+                    <div class="col-lg-5 col-md-6 RightSide">
                         <h4>Alo Gobi</h4>
                         <p  class="PriceP"> Tk 200
                             <!-- <span class="discount">250TK</span> -->
@@ -133,6 +140,37 @@
                         <div class="ProductBtn">
                             <button class="CartBtn addBtn"><i class="fa fa-cart-shopping"></i> Add To Cart</button>
                             <button class="addBtn"><i class="fa fa-bag-shopping"></i> Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="ChargeDiv">
+                            <h5 class="title">Charge</h5>
+
+                                <div class="panel-body">
+                                    <p>
+                                        Inside Dhaka : Taka 60 (1-5 Days)
+                                    </p>
+
+                                    <p>
+                                        Inside Dhaka : Taka 60 (1-5 Days)
+                                    </p>
+
+                                    <p>
+                                        text : Taka 60 (1-5 Days)
+                                    </p>
+                                </div>
+                        </div>
+                        
+                        <div class="ChargeDiv mt-3">
+                            <h5 class="title">Payment Method</h5>
+
+                                <div class="panel-body">
+                                    <img src="./asset/image/Amex.jpg" alt="">
+                                    <img src="./asset/image/Visa.jpg" alt="">
+                                    <img src="./asset/image/Master-card.jpg" alt="">
+                                    <img src="./asset/image/Amex.jpg" alt="">
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -281,7 +319,6 @@
                     Related Product
                 </h2>
 
-                
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-sm-6 Product Width50">
                         <a href="./productSingle.html">
@@ -549,6 +586,9 @@
                 </div>
             </div>
         </footer>
+
+        <!-- custom app -->
+        <script src="./asset/js/app.js"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
