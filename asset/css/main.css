@@ -707,10 +707,15 @@ footer ul li a {
     overflow: hidden;
 }
 
+.ProductBtn{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .ProductBtn button{
     font-weight: 400 !important;
     background-color: var(--logoColor-1);
-    width: 200px;
+    width: 185px;
 }
 
 .ProductBtn button:hover{
@@ -809,7 +814,7 @@ footer ul li a {
 }
 
 .Variant .VarImg{
-    width: 89px;
+    width: 87px;
     height: 73px;
     border-radius: 5px;
     margin-right: .5rem;
@@ -913,7 +918,6 @@ footer ul li a {
     .tab-content .tab-pane{
         padding: 20px ;
         border-radius: 10px;
-        /* height: 450px; */
         border-top: 1px solid rgb(219, 213, 213);
     }
 
@@ -1061,7 +1065,7 @@ footer ul li a {
     .RelatedProduct .sectionTitle{
         text-align: left;
         font-size: 28px;
-    }
+    }   
 
 .ChargeDiv{
     background-color: white;
@@ -1086,6 +1090,14 @@ footer ul li a {
     margin-bottom: 10px;
 }
 
+.RightRelated .ImageBox{
+    height: 143px;
+}
+
+.RightRelated button{
+    display: none;
+}
+
 .SearchBer input{
     padding-left: 15px;
     padding-right: 20px;
@@ -1096,6 +1108,7 @@ footer ul li a {
     outline: none;
     width: 339px;
 }
+
 .SearchBer form{
     position: relative;
     width: min-content;
@@ -1467,6 +1480,12 @@ button.FaBtn.RegistBtn.LoginBtn{
     }
 }
 
+@media screen and (min-width: 991px) and (max-width: 1088px) {
+    .AnotherImg img {
+        width: 88px;
+    }
+}
+
 @media screen and (max-width: 991px) {
     .LoginBtn{
         margin-top: 20px;
@@ -1531,6 +1550,10 @@ button.FaBtn.RegistBtn.LoginBtn{
 
     .table-responsive{
         overflow-x: scroll;
+    }
+
+    .RightRelated{
+        display: none;
     }
 }
 
@@ -1727,6 +1750,14 @@ button.FaBtn.RegistBtn.LoginBtn{
     .SearchBer input,
     .SearchBer form{
         width: 100%;
+    }
+
+    .ProductBtn button:not(:last-child) {
+        margin-right: .3rem !important;
+    }
+
+    .ProductBtn button {
+        width: 150px;
     }
 }
 
