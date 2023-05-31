@@ -354,9 +354,11 @@ footer ul li a {
    margin-top: 30px;
    margin-left: 30px;
    margin-right: 30px; 
+   align-items: center;
 }
 #about_first_section img{
     height: auto;
+    border-radius: 10px;
     width: 100%;
 }
 #about_first_section p{
@@ -394,8 +396,29 @@ footer ul li a {
     color: #a00505;
 }
 @media only screen and (min-width: 280px) and (max-width: 428px) {
+    .about_page_section {
+        padding: 20px 0;
+        padding-bottom: 0;
+    }
     .about_page_section h1{
         font-size: 40px;
+        padding: 0 10px;
+        margin-bottom: 0;
+    }
+    #about_first_section{
+        margin-top: 15px;
+    }
+    .about_page_section p{
+        text-align: justify;
+    }
+    #about_first_section img {
+        margin-bottom: 20px !important;
+    }
+    #about_second_section {
+        margin-top: 10px;
+    }
+    #right_bg p{
+        color: white;
     }
     .about_page_section h1{
         margin-left: 0;
@@ -412,7 +435,7 @@ footer ul li a {
         width: 100%;
     }
     #right_bg{
-        padding: 40px 20px;
+        padding: 20px 25px;
     }
     #right_bg h2{
         font-size: 60px;
@@ -593,13 +616,24 @@ footer ul li a {
 
 
 @media only screen and (min-width: 280px) and (max-width: 428px){
+    .contact_page {
+        padding: 20px 0;
+        padding-bottom: 0;
+    }
     .contact_page h1{
         font-size: 40px;
         margin-left: 10px;
     }
+    .contact_info {
+        padding: 25px 0;
+        padding-top: 0;
+    }
+    #contact_right_bg p{
+        color: white;
+    }
     .map_and_form_section{
-        margin: 30px 10px;
-        padding: 30px 10px;
+        margin: 15px 10px;
+        padding: 15px 15px;
     }
     .contact_btn{
         margin-bottom: 30px;
@@ -764,16 +798,25 @@ footer ul li a {
 }
 
 @media only screen and (min-width: 280px) and (max-width: 428px){
-    #blog_page{
-        padding: 50px 10px;
+    #blog_page,
+    #blog_single_page{
+        padding: 20px 15px !important;
     }
     #sidebar{
         margin-right: 0px;
+        margin-top: 0 !important;
+    }
+    .latest_post,
+    .post_category{
+        margin-top: 15px;
+    }
+    #blog_single_page img {
+        padding-bottom: 15px;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px){
     #blog_page{
-        padding: 50px 10px;
+        padding: 50px 20px;
     }
     #sidebar{
         margin-right: 0px;
@@ -990,10 +1033,10 @@ footer ul li a {
 }
 @media only screen and (min-width: 280px) and (max-width: 428px){
     #checkout_page{
-        padding: 50px 10px;
+        padding: 20px 15px;
     }
     #checkout_page #tips{
-        margin-top: 30px;
+        margin-top: 20px;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px){
