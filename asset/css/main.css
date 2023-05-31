@@ -316,10 +316,11 @@ footer ul li a {
 
 .button{
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 10px 15px;
     border-radius: 5px;
     background-color: var(--iconBg);
-
+    font-weight: 700;
+    font-size: 20px;
 }
 /* heros end */
 

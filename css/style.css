@@ -294,7 +294,7 @@ footer ul li a {
 }
 
 
-@media only screen and (min-width: 280px) and (max-width: 428px) {
+@media only screen and (min-width: 280px) and (max-width: 575px) {
     .FooterTitle {
         margin-bottom: 10px;
     }
@@ -395,7 +395,7 @@ footer ul li a {
 .about_page_button:hover{
     color: #a00505;
 }
-@media only screen and (min-width: 280px) and (max-width: 428px) {
+@media only screen and (min-width: 280px) and (max-width: 575px) {
     .about_page_section {
         padding: 20px 0;
         padding-bottom: 0;
@@ -615,7 +615,7 @@ footer ul li a {
 }
 
 
-@media only screen and (min-width: 280px) and (max-width: 428px){
+@media only screen and (min-width: 280px) and (max-width: 575px){
     .contact_page {
         padding: 20px 0;
         padding-bottom: 0;
@@ -797,7 +797,7 @@ footer ul li a {
     padding-top: 30px;
 }
 
-@media only screen and (min-width: 280px) and (max-width: 428px){
+@media only screen and (min-width: 280px) and (max-width: 575px){
     #blog_page,
     #blog_single_page{
         padding: 20px 15px !important;
@@ -847,7 +847,7 @@ footer ul li a {
     color: #ffffff;
 }
 
-@media only screen and (min-width: 280px) and (max-width: 428px){
+@media only screen and (min-width: 280px) and (max-width: 575px){
     #blog_single_page{
         padding: 50px 10px;
     }
@@ -927,7 +927,7 @@ footer ul li a {
 .delivery_feature .border_left{
     border-right: 2px dashed #ffee00;
 }
-@media only screen and (min-width: 280px) and (max-width: 428px){
+@media only screen and (min-width: 280px) and (max-width: 575px){
     #delivery_content{
         padding: 0;
     }
@@ -1031,7 +1031,7 @@ footer ul li a {
     width: 100%;
     border-radius: 24px;
 }
-@media only screen and (min-width: 280px) and (max-width: 428px){
+@media only screen and (min-width: 280px) and (max-width: 575px){
     #checkout_page{
         padding: 20px 15px;
     }
